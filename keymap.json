@@ -1,0 +1,21 @@
+[
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-left": "pane::GoBack",
+      "cmd-right": "pane::GoForward",
+      "cmd-p": "project_search::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-o": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-p": "pane::DeploySearch"
+    }
+  }
+]
