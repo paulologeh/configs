@@ -2,8 +2,6 @@
   {
     "context": "Pane",
     "bindings": {
-      "cmd-left": "pane::GoBack",
-      "cmd-right": "pane::GoForward",
       "cmd-p": "project_search::ToggleFocus"
     }
   },
@@ -16,6 +14,13 @@
     "context": "Workspace",
     "bindings": {
       "cmd-p": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-left": "pane::GoBack",
+      "alt-right": "pane::GoForward"
     }
   }
 ]
