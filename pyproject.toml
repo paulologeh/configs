@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "defaul poetry config"
+version = "0.1.0"
+description = ""
+authors = ["Paul Ologeh <paulologeh@pythonproperly.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pyright = "*"
+
+[tool.pytest.ini_options]
+log_cli_level = 10
+log_cli = true
+log_auto_indent = true
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+typeCheckingMode = "strict"        # this might be way too noisy
+useLibraryCodeForTypes = true
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+reportMissingTypeStubs = false     # this is way too nisy
+reportImportCycles = "information"
+reportUnusedImport = "warning"
+reportUnusedClass = "warning"
+reportUnusedFunction = "warning"
+reportUnusedVariable = "warning"
+reportDuplicateImport = "warning"
+
+# going very much overboard here
+reportUntypedNamedTuple = "error"
+reportPrivateUsage = "error"
+reportConstantRedefinition = "error"
+reportDeprecated = "error"
+reportUnknownParameterType = "information"
+reportUnknownArgumentType = "information"
+reportUnknownLambdaType = "information"
+reportUnknownVariableType = "warning"
+reportUnknownMemberType = "error"
+reportMissingParameterType = "warning"
+reportMissingTypeArgument = "warning"
+reportInvalidTypeVarUse = "error"
+reportUnnecessaryIsInstance = "warning"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportUnnecessaryContains = "warning"
+reportImplicitStringConcatenation = "warning"
+reportUnhashable = "error"
+reportUnusedExpression = "warning"
+reportUnnecessaryTypeIgnoreComment = true
+reportShadowedImports = "warning"
+reportImplicitOverride = "warning"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
