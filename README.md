@@ -1,1 +1,1 @@
-# zed
+# All my configurations
