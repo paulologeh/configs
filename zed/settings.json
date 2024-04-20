@@ -1,11 +1,3 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
 {
   "features": {
     "copilot": false
@@ -17,7 +9,13 @@
   "copy_on_select": true,
   "autosave": "on_focus_change",
   "confirm_quit": true,
-  "theme": "One Dark",
+  "format_on_save": "on",
+  "enable_language_server": true,
+  "theme": {
+    "mode": "dark",
+    "light": "Solarized Light",
+    "dark": "Solarized Dark"
+  },
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
@@ -32,6 +30,9 @@
           "arguments": ["-"]
         }
       }
+    },
+    "YAML": {
+      "format_on_save": "language_server"
     }
   },
   "lsp": {

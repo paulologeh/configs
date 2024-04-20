@@ -19,8 +19,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "alt-left": "pane::GoBack",
-      "alt-right": "pane::GoForward"
+      "cmd-left": "pane::GoBack",
+      "cmd-right": "pane::GoForward"
     }
   }
 ]
