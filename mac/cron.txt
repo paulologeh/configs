@@ -1,0 +1,2 @@
+0 18 * * * /Users/paulologeh/Projects/configs/mac/enable_dark_mode.sh
+0 9 * * * /Users/paulologeh/Projects/configs/mac/enable_light_mode.sh
