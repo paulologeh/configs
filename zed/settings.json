@@ -12,9 +12,9 @@
   "format_on_save": "on",
   "enable_language_server": true,
   "theme": {
-    "mode": "dark",
-    "light": "Solarized Light",
-    "dark": "Solarized Dark"
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
   },
   "vim_mode": true,
   "ui_font_size": 16,
@@ -36,6 +36,17 @@
     }
   },
   "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "basic"
+        },
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    },
     "rust-analyzer": {
       "initialization_options": {
         "inlayHints": {
